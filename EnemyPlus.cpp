@@ -2,13 +2,24 @@
 #include "Game.h"
 #include <cstdlib>
 #include <cmath>
+#include <SDL_mixer.h>
+
 
 // Khởi tạo EnemyPlus với vị trí và kích thước cho trước, thiết lập cooldown bắn (ví dụ 1000ms)
 EnemyPlus::EnemyPlus(int x, int y, int width, int height)
     : Enemy(x, y, width, height)  // Gọi constructor của lớp cơ sở
 {
     lastShotTime = 0;
-    shootCooldown = 888; // bắn mỗi 1000ms (1 giây)
+    shootCooldown = 800; // bắn mỗi 1000ms (1 giây)
+    // Load các texture animation cho EnemyPlus từ TextureManager
+    // Các key đã được định nghĩa trong TextureManager::LoadTextures()
+//    for (int i = 0; i < ANIM_FRAMES; i++) {
+//        std::string key = "enemyplus_" + std::to_string(i);
+//        hurtTextures[i] = TextureManager::GetTexture(key);
+//        if (hurtTextures[i] == nullptr) {
+//            std::cout << "Failed to load EnemyPlus animation texture: " << key << std::endl;
+//        }
+//    }
 }
 
 EnemyPlus::~EnemyPlus() {
@@ -19,6 +30,12 @@ void EnemyPlus::update() {
     Enemy::update();
 
     // Bạn có thể thêm chuyển động riêng của EnemyPlus nếu cần
+    // Cập nhật frame animation dựa vào thời gian
+    Uint32 currentTime = SDL_GetTicks();
+//    if (currentTime - lastFrameTime >= frameDelay) {
+//        lastFrameTime = currentTime;
+//        currentFrame = (currentFrame + 1) % ANIM_FRAMES;
+//    }
 }
 
 std::vector<Bullet*> EnemyPlus::shoot() {

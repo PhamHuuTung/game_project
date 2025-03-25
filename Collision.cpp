@@ -1,4 +1,6 @@
 #include "Collision.h"
+#include <SDL_mixer.h>
+
 
 bool Collision::checkCollision(const SDL_Rect& a, const SDL_Rect& b) {
     // Check if any of the sides from A are outside of B

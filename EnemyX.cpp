@@ -1,5 +1,7 @@
 #include "EnemyX.h"
 #include "Game.h"
+#include <SDL_mixer.h>
+
 #include <cmath>
 #include <iostream>
 
@@ -7,7 +9,7 @@ EnemyX::EnemyX(int x, int y, int width, int height)
     : Enemy(x, y, width, height)  // Gọi constructor của lớp cơ sở
 {
     lastShotTime = 0;
-    shootCooldown = 888; // Ví dụ: bắn mỗi 1.5 giây
+    shootCooldown = 800; // Ví dụ: bắn mỗi 1.5 giây
 }
 
 EnemyX::~EnemyX() {

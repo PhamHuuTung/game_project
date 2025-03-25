@@ -33,6 +33,15 @@ protected:
     Uint32 lastDirectionChangeTime;  // Theo dõi thời gian thay đổi hướng cuối cùng
     int directionX;  // Hướng di chuyển ngang (1: phải, -1: trái)
     int directionY;  // Hướng di chuyển dọc (1: xuống, -1: lên)
+        // --- Phần animation cho enemy ---
+    static const int ENEMY_ANIM_FRAMES = 12;
+    SDL_Texture* animTextures[ENEMY_ANIM_FRAMES];  // Mảng chứa 12 texture (animation)
+    int currentFrame = 0;        // Frame hiện tại
+    Uint32 lastFrameTime = 0;    // Thời gian cập nhật frame cuối cùng
+    Uint32 frameDelay = 80;     // Thời gian delay giữa các frame (ms)
+    bool facingRight;
+
+
 };
 
 #endif // ENEMY_H

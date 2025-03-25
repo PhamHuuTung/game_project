@@ -16,6 +16,8 @@ public:
 
 private:
     static std::map<std::string, SDL_Texture*> textures;
+    // Add this function to TextureManager.h
+    static void DrawEx(SDL_Texture* tex, SDL_Rect src, SDL_Rect dest, SDL_RendererFlip flip = SDL_FLIP_NONE);
 };
 
 #endif // TEXTUREMANAGER_H

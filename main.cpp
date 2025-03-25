@@ -2,6 +2,8 @@
 #include <SDL_image.h>
 #include <iostream>
 #include "Game.h"
+#include <SDL_mixer.h>
+
 
 Game *game = nullptr;
 

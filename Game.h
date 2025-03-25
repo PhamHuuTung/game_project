@@ -1,8 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
-#include <SDL_ttf.h>
+
 #include <SDL.h>
+#include <SDL_ttf.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include <iostream>
 #include <vector>
 #include "Player.h"
@@ -41,6 +43,8 @@ private:
     Uint32 lastSkillSpawnTime = 0;
     Uint32 lastEnemySpawnTime;  // Thời điểm spawn quái vật lần cuối    // Để kiểm soát tần số tạo đạn trong lúc skill
     std::vector<Bullet*> skillBullets; // Chứa các viên đạn tạo ra trong lúc skill
+
+    Mix_Music* backgroundMusic; // Biến lưu nhạc nền
 
 
     bool isRunning;

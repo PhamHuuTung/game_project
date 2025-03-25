@@ -1,42 +1,49 @@
 # depslib dependency file v1.0
-1740973761 source:c:\users\pham huu tung\desktop\tung\gamedoodle\main.cpp
+1742657746 source:c:\users\pham huu tung\desktop\tung\gamedoodle\main.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<iostream>
 	"Game.h"
+	<SDL_mixer.h>
 
-1740975858 source:c:\users\pham huu tung\desktop\tung\gamedoodle\bullet.cpp
+1742834460 source:c:\users\pham huu tung\desktop\tung\gamedoodle\bullet.cpp
 	"Bullet.h"
 	"Game.h"
 	"Config.h"
+	<SDL_mixer.h>
 	<cmath>
+	"TextureManager.h"
 
-1740975858 c:\users\pham huu tung\desktop\tung\gamedoodle\bullet.h
+1742830131 c:\users\pham huu tung\desktop\tung\gamedoodle\bullet.h
+	<array>
 	<SDL.h>
 
-1741917918 c:\users\pham huu tung\desktop\tung\gamedoodle\game.h
+1742662006 c:\users\pham huu tung\desktop\tung\gamedoodle\game.h
+	<SDL.h>
 	<SDL_ttf.h>
-	<SDL.h>
 	<SDL_image.h>
+	<SDL_mixer.h>
 	<iostream>
 	<vector>
 	"Player.h"
 	"Enemy.h"
 
-1740973296 c:\users\pham huu tung\desktop\tung\gamedoodle\player.h
+1742784530 c:\users\pham huu tung\desktop\tung\gamedoodle\player.h
+	<array>
 	<SDL.h>
 	"Bullet.h"
 
-1741919923 c:\users\pham huu tung\desktop\tung\gamedoodle\enemy.h
+1742811360 c:\users\pham huu tung\desktop\tung\gamedoodle\enemy.h
 	<SDL.h>
 
-1740909066 source:c:\users\pham huu tung\desktop\tung\gamedoodle\collision.cpp
+1742657746 source:c:\users\pham huu tung\desktop\tung\gamedoodle\collision.cpp
 	"Collision.h"
+	<SDL_mixer.h>
 
 1740909075 c:\users\pham huu tung\desktop\tung\gamedoodle\collision.h
 	<SDL.h>
 
-1741919930 source:c:\users\pham huu tung\desktop\tung\gamedoodle\game.cpp
+1742834368 source:c:\users\pham huu tung\desktop\tung\gamedoodle\game.cpp
 	"Game.h"
 	"TextureManager.h"
 	"Collision.h"
@@ -45,53 +52,59 @@
 	"EnemyX.h"
 	"Config.h"
 	<algorithm>
-	<vector>
 	<cmath>
 	<cstdlib>
 	<ctime>
 
-1740909117 c:\users\pham huu tung\desktop\tung\gamedoodle\texturemanager.h
+1742488820 c:\users\pham huu tung\desktop\tung\gamedoodle\texturemanager.h
 	<SDL.h>
 	<SDL_image.h>
 	<string>
 	<map>
 
-1741920602 source:c:\users\pham huu tung\desktop\tung\gamedoodle\player.cpp
+1742873638 source:c:\users\pham huu tung\desktop\tung\gamedoodle\player.cpp
 	"Player.h"
 	"Game.h"
 	"Config.h"
+	<SDL_mixer.h>
 	<cmath>
 	<iostream>
 	<SDL.h>
+	"TextureManager.h"
 
-1740909149 source:c:\users\pham huu tung\desktop\tung\gamedoodle\texturemanager.cpp
+1742830172 source:c:\users\pham huu tung\desktop\tung\gamedoodle\texturemanager.cpp
 	"TextureManager.h"
 	"Game.h"
+	<SDL_mixer.h>
 
-1741920508 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemy.cpp
+1742812186 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemy.cpp
 	"Enemy.h"
 	"Game.h"
 	"Config.h"
 	<cstdlib>
+	<SDL_mixer.h>
 	<ctime>
+	"TextureManager.h"
 
-1740929718 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemyplus.cpp
+1742809989 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemyplus.cpp
 	"EnemyPlus.h"
 	"Game.h"
 	<cstdlib>
 	<cmath>
+	<SDL_mixer.h>
 
-1740921878 c:\users\pham huu tung\desktop\tung\gamedoodle\enemyplus.h
+1742809783 c:\users\pham huu tung\desktop\tung\gamedoodle\enemyplus.h
 	"Enemy.h"
 	"Bullet.h"
 	<vector>
 	<SDL.h>
 
-1740929718 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemystar.cpp
+1742657746 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemystar.cpp
 	"EnemyStar.h"
 	"Game.h"
 	<cmath>
 	<iostream>
+	<SDL_mixer.h>
 
 1740923446 c:\users\pham huu tung\desktop\tung\gamedoodle\enemystar.h
 	"Enemy.h"
@@ -99,9 +112,10 @@
 	<vector>
 	<SDL.h>
 
-1740929718 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemyx.cpp
+1742721368 source:c:\users\pham huu tung\desktop\tung\gamedoodle\enemyx.cpp
 	"EnemyX.h"
 	"Game.h"
+	<SDL_mixer.h>
 	<cmath>
 	<iostream>
 
@@ -111,5 +125,5 @@
 	<vector>
 	<SDL.h>
 
-1741920802 c:\users\pham huu tung\desktop\tung\gamedoodle\config.h
+1742873251 c:\users\pham huu tung\desktop\tung\gamedoodle\config.h
 

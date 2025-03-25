@@ -17,6 +17,10 @@ public:
     // Phương thức bắn đạn theo hình dấu +
     std::vector<Bullet*> shoot();
 
+    // Hàm render để vẽ animation của EnemyPlus
+  //  virtual void render() override;
+
+
 private:
     Uint32 lastShotTime;    // Thời điểm bắn cuối cùng (ms)
     Uint32 shootCooldown;   // Thời gian chờ giữa các lần bắn (ms)

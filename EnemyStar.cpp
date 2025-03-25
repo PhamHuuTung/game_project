@@ -2,12 +2,13 @@
 #include "Game.h"
 #include <cmath>
 #include <iostream>
+#include <SDL_mixer.h>
 
 EnemyStar::EnemyStar(int x, int y, int width, int height)
     : Enemy(x, y, width, height)
 {
     lastShotTime = 0;
-    shootCooldown = 888; // Ví dụ: bắn mỗi 1.5 giây
+    shootCooldown = 800; // Ví dụ: bắn mỗi 1.5 giây
 }
 
 EnemyStar::~EnemyStar() {
